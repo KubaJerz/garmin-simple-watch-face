@@ -1,0 +1,9 @@
+<!-- <layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+</layout> -->
+<layout id="WatchFace">
+    <label id="Date"            x="center" y="15%"    font="Graphics.FONT_MEDIUM"           justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HoursAndMinutes" x="center" y="center" font="Graphics.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="AmPm"            x="80%"    y="52%"    font="Graphics.FONT_TINY"            justification="Graphics.TEXT_JUSTIFY_LEFT" />
+    <label id="DayOfTheWeek"    x="center" y="75%"    font="Graphics.FONT_SMALL"           justification="Graphics.TEXT_JUSTIFY_CENTER" />
+</layout>

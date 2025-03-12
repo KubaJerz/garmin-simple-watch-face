@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/kuba/Desktop/playground/garmin-test/customface/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="3" lineNum="5" parent="globals/customfaceApp" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="4" lineNum="8" parent="globals/customfaceView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="5" lineNum="12" parent="globals/customfaceApp" pc="268435525" symbol="onStart"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="6" lineNum="20" parent="globals/customfaceApp" pc="268435528" symbol="getInitialView"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="6" lineNum="21" parent="globals/customfaceApp" pc="268435530" symbol="getInitialView"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="7" lineNum="7" parent="globals/customfaceApp" pc="268435560" symbol="initialize"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="7" lineNum="8" parent="globals/customfaceApp" pc="268435562" symbol="initialize"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceApp.mc" id="8" lineNum="16" parent="globals/customfaceApp" pc="268435575" symbol="onStop"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="11" lineNum="15" parent="globals/customfaceView" pc="268435578" symbol="onLayout"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="11" lineNum="16" parent="globals/customfaceView" pc="268435580" symbol="onLayout"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="13" lineNum="10" parent="globals/customfaceView" pc="268435614" symbol="initialize"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="13" lineNum="11" parent="globals/customfaceView" pc="268435616" symbol="initialize"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="26" parent="globals/customfaceView" pc="268435629" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="28" parent="globals/customfaceView" pc="268435632" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="31" parent="globals/customfaceView" pc="268435644" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="32" parent="globals/customfaceView" pc="268435656" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="35" parent="globals/customfaceView" pc="268435673" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="36" parent="globals/customfaceView" pc="268435681" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="40" parent="globals/customfaceView" pc="268435688" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="41" parent="globals/customfaceView" pc="268435696" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="42" parent="globals/customfaceView" pc="268435703" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="43" parent="globals/customfaceView" pc="268435711" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="47" parent="globals/customfaceView" pc="268435724" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="48" parent="globals/customfaceView" pc="268435731" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="51" parent="globals/customfaceView" pc="268435745" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="52" parent="globals/customfaceView" pc="268435795" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="55" parent="globals/customfaceView" pc="268435836" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="56" parent="globals/customfaceView" pc="268435860" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="58" parent="globals/customfaceView" pc="268435872" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="59" parent="globals/customfaceView" pc="268435896" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="61" parent="globals/customfaceView" pc="268435908" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="62" parent="globals/customfaceView" pc="268435932" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="64" parent="globals/customfaceView" pc="268435944" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="65" parent="globals/customfaceView" pc="268435968" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" id="15" lineNum="68" parent="globals/customfaceView" pc="268435980" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268436001" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268436012" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436090" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436184" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436262" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/Desktop/playground/garmin-test/customface/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436340" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" object="true" symbol="customfaceView"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="10" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="6" object="true" symbol="customfaceApp"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="9" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435613" name="dc" stackId="1" startPc="268435578"/>
+        <entry arg="true" endPc="268436000" name="dc" stackId="1" startPc="268435629"/>
+        <entry endPc="268435999" name="clockTime" stackId="2" startPc="268435632"/>
+        <entry endPc="268435999" name="now" stackId="3" startPc="268435632"/>
+        <entry endPc="268435999" name="info" stackId="4" startPc="268435632"/>
+        <entry endPc="268435999" name="hour" stackId="5" startPc="268435632"/>
+        <entry endPc="268435999" name="ampm" stackId="6" startPc="268435632"/>
+        <entry endPc="268435999" name="dayNames" stackId="7" startPc="268435632"/>
+        <entry endPc="268435999" name="dayName" stackId="8" startPc="268435632"/>
+        <entry endPc="268435999" name="timeString" stackId="9" startPc="268435632"/>
+        <entry endPc="268435999" name="formated_date" stackId="10" startPc="268435632"/>
+        <entry endPc="268435999" name="time_view" stackId="11" startPc="268435632"/>
+        <entry endPc="268435999" name="ampm_view" stackId="12" startPc="268435632"/>
+        <entry endPc="268435999" name="date_view" stackId="13" startPc="268435632"/>
+        <entry endPc="268435999" name="day_name_view" stackId="14" startPc="268435632"/>
+        <entry arg="true" endPc="268436364" name="dc" stackId="1" startPc="268436001"/>
+        <entry endPc="268436364" name="rez_cmp_local_text_Date" stackId="2" startPc="268436012"/>
+        <entry endPc="268436364" name="rez_cmp_local_text_HoursAndMinutes" stackId="3" startPc="268436012"/>
+        <entry endPc="268436364" name="rez_cmp_local_text_AmPm" stackId="4" startPc="268436012"/>
+        <entry endPc="268436364" name="rez_cmp_local_text_DayOfTheWeek" stackId="5" startPc="268436012"/>
+    </localVars>
+    <deviceInfo deviceVersion="de121dfa604491767422db2c3063530f8fd6465b" partNumber="006-B4260-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="125" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/customfaceApp" offset="178" parentId="globals" symbolId="customfaceApp" type="class"/>
+        <dataEntry label="globals/customfaceView" offset="249" parentId="globals" symbolId="customfaceView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="347" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="382" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="417" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="customfaceApp" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="customfaceView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="customfaceApp" startPc="268435525">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435559" name="getInitialView" parent="customfaceApp" startPc="268435528">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435574" name="initialize" parent="customfaceApp" startPc="268435560">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435577" name="onStop" parent="customfaceApp" startPc="268435575">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="customfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="customfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435613" name="onLayout" parent="customfaceView" startPc="268435578">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="customfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435628" name="initialize" parent="customfaceView" startPc="268435614">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="customfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436000" name="onUpdate" parent="customfaceView" startPc="268435629">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436364" name="WatchFace" parent="Layouts" startPc="268436001">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

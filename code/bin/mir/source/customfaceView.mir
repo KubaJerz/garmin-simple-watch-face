@@ -1,0 +1,354 @@
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; @symbol_importdef<2> = [Gregorian,6,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 8; @symbol_classdef = [customfaceView,8,6,20]; @symbol_extends<0> = [WatchUi,8,29,36]; @symbol_extends<1> = [WatchFace,8,37,46]; ]
+class customfaceView extends WatchUi.WatchFace {
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_10_26_12_4_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 11 8 ]
+        symbol [ WatchFace %tmp.2 11 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 11 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_10_26_12_4_stop:
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 15; @symbol_functiondef = [onLayout,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Dc,15,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_15_40_17_4_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 16 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 16 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 16 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 16 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 16 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 16 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_15_40_17_4_stop:
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 22; @symbol_functiondef = [onShow,22,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 26; @symbol_functiondef = [onUpdate,26,13,21]; @symbol_param<0> = [dc,26,22,24]; @symbol_param<0>_type<0> = [Dc,26,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 28 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 28 12 21 ];
+        symbol [ System %tmp.1 28 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 28 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 28 12 21 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 31 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %now.2 = local;
+        symbol [ now %now.2 31 12 15 ];
+        symbol [ Time %tmp.4 31 18 22 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 31 23 26 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %now.2 %tmp.6;
+        symbol [ now %now.2 31 12 15 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 32 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %info.3 = local;
+        symbol [ info %info.3 32 12 16 ];
+        symbol [ Gregorian %tmp.7 32 19 28 ];
+        %tmp.7 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.8 32 29 33 ];
+        %tmp.8 = getv function %tmp.7 :info;
+        %tmp.9 = lgetv %now.2;
+        symbol [ now %tmp.9 32 34 37 ];
+        symbol [ Time %tmp.10 32 39 43 ];
+        %tmp.10 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.11 32 44 56 ];
+        %tmp.11 = getv %tmp.10 :FORMAT_SHORT;
+        %tmp.12 = invoke %tmp.7 %tmp.8(%tmp.9, %tmp.11);
+        lputv %info.3 %tmp.12;
+        symbol [ info %info.3 32 12 16 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 35 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %hour.4 = local;
+        symbol [ hour %hour.4 35 12 16 ];
+        %tmp.13 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.13 35 19 28 ];
+        symbol [ hour %tmp.14 35 29 33 ];
+        %tmp.14 = getv %tmp.13 :hour;
+        lputv %hour.4 %tmp.14;
+        symbol [ hour %hour.4 35 12 16 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 36 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %ampm.5 = local;
+        symbol [ ampm %ampm.5 36 12 16 ];
+        %tmp.15 = "AM";
+        lputv %ampm.5 %tmp.15;
+        symbol [ ampm %ampm.5 36 12 16 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 40 8 ]
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_8_45_8_if_stmt:
+        %tmp.16 = lgetv %hour.4;
+        symbol [ hour %tmp.16 40 12 16 ];
+        %tmp.17 = 12;
+        %tmp.18 = gte %tmp.16 %tmp.17;
+        bf %tmp.18 @_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_8_45_8_if_end;
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_8_45_8_if_true:
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_24_45_8_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 41 12 ]
+        %tmp.19 = "PM";
+        lputv %ampm.5 %tmp.19;
+        symbol [ ampm %ampm.5 41 12 16 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 42 12 ]
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_12_44_12_if_stmt:
+        %tmp.20 = lgetv %hour.4;
+        symbol [ hour %tmp.20 42 16 20 ];
+        %tmp.21 = 12;
+        %tmp.22 = gt %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_12_44_12_if_end;
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_12_44_12_if_true:
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_27_44_12_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 43 16 ]
+        %tmp.23 = lgetv %hour.4;
+        symbol [ hour %tmp.23 43 23 27 ];
+        %tmp.24 = 12;
+        %tmp.25 = sub %tmp.23 %tmp.24;
+        lputv %hour.4 %tmp.25;
+        symbol [ hour %hour.4 43 16 20 ];
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_27_44_12_stop:
+        goto @_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_12_44_12_if_end;
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_42_12_44_12_if_end:
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_24_45_8_stop:
+        goto @_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_8_45_8_if_end;
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_40_8_45_8_if_end:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 47 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %dayNames.6 = local;
+        symbol [ dayNames %dayNames.6 47 12 20 ];
+        %tmp.26 = newa 7;
+        %tmp.27 = "Sunday";
+        %tmp.28 = dup %tmp.26;
+        %tmp.29 = aputv %tmp.28 0 %tmp.27;
+        %tmp.30 = "Monday";
+        %tmp.31 = dup %tmp.29;
+        %tmp.32 = aputv %tmp.31 1 %tmp.30;
+        %tmp.33 = "Tuesday";
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 2 %tmp.33;
+        %tmp.36 = "Wednesday";
+        %tmp.37 = dup %tmp.35;
+        %tmp.38 = aputv %tmp.37 3 %tmp.36;
+        %tmp.39 = "Thursday";
+        %tmp.40 = dup %tmp.38;
+        %tmp.41 = aputv %tmp.40 4 %tmp.39;
+        %tmp.42 = "Friday";
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 5 %tmp.42;
+        %tmp.45 = "Saturday";
+        %tmp.46 = dup %tmp.44;
+        %tmp.47 = aputv %tmp.46 6 %tmp.45;
+        lputv %dayNames.6 %tmp.47;
+        symbol [ dayNames %dayNames.6 47 12 20 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 48 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %dayName.7 = local;
+        symbol [ dayName %dayName.7 48 12 19 ];
+        %tmp.48 = lgetv %dayNames.6;
+        symbol [ dayNames %tmp.48 48 22 30 ];
+        %tmp.49 = lgetv %info.3;
+        symbol [ info %tmp.49 48 31 35 ];
+        symbol [ day_of_week %tmp.50 48 36 47 ];
+        %tmp.50 = getv %tmp.49 :day_of_week;
+        %tmp.51 = 1;
+        %tmp.52 = sub %tmp.50 %tmp.51;
+        %tmp.53 = agetv %tmp.48 %tmp.52;
+        lputv %dayName.7 %tmp.53;
+        symbol [ dayName %dayName.7 48 12 19 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 51 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %timeString.8 = local;
+        symbol [ timeString %timeString.8 51 12 22 ];
+        symbol [ Lang %tmp.54 51 25 29 ];
+        %tmp.54 = getm $.Toybox.Lang;
+        symbol [ format %tmp.55 51 30 36 ];
+        %tmp.55 = getv function %tmp.54 :format;
+        %tmp.56 = "$1$:$2$";
+        %tmp.57 = newa 2;
+        %tmp.58 = lgetv %hour.4;
+        symbol [ hour %tmp.58 51 49 53 ];
+        %tmp.59 = dup %tmp.57;
+        %tmp.60 = aputv %tmp.59 0 %tmp.58;
+        %tmp.61 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.61 51 55 64 ];
+        symbol [ min %tmp.62 51 65 68 ];
+        %tmp.62 = getv %tmp.61 :min;
+        symbol [ format %tmp.63 51 69 75 ];
+        %tmp.63 = getv function %tmp.62 :format;
+        %tmp.64 = "%02d";
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = dup %tmp.60;
+        %tmp.67 = aputv %tmp.66 1 %tmp.65;
+        %tmp.68 = invoke %tmp.54 %tmp.55(%tmp.56, %tmp.67);
+        lputv %timeString.8 %tmp.68;
+        symbol [ timeString %timeString.8 51 12 22 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 52 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %formated_date.9 = local;
+        symbol [ formated_date %formated_date.9 52 12 25 ];
+        symbol [ Lang %tmp.69 52 28 32 ];
+        %tmp.69 = getm $.Toybox.Lang;
+        symbol [ format %tmp.70 52 33 39 ];
+        %tmp.70 = getv function %tmp.69 :format;
+        %tmp.71 = "$1$/$2$";
+        %tmp.72 = newa 2;
+        %tmp.73 = lgetv %info.3;
+        symbol [ info %tmp.73 52 52 56 ];
+        symbol [ month %tmp.74 52 57 62 ];
+        %tmp.74 = getv %tmp.73 :month;
+        %tmp.75 = dup %tmp.72;
+        %tmp.76 = aputv %tmp.75 0 %tmp.74;
+        %tmp.77 = lgetv %info.3;
+        symbol [ info %tmp.77 52 64 68 ];
+        symbol [ day %tmp.78 52 69 72 ];
+        %tmp.78 = getv %tmp.77 :day;
+        %tmp.79 = dup %tmp.76;
+        %tmp.80 = aputv %tmp.79 1 %tmp.78;
+        %tmp.81 = invoke %tmp.69 %tmp.70(%tmp.71, %tmp.80);
+        lputv %formated_date.9 %tmp.81;
+        symbol [ formated_date %formated_date.9 52 12 25 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 55 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %time_view.10 = local;
+        symbol [ time_view %time_view.10 55 12 21 ];
+        symbol [ View %tmp.83 55 24 28 ];
+        %tmp.83 = getv ? :View;
+        symbol [ findDrawableById %tmp.84 55 29 45 ];
+        %tmp.84 = getv function %tmp.83 :findDrawableById;
+        %tmp.85 = "HoursAndMinutes";
+        %tmp.86 = invoke %tmp.83 %tmp.84(%tmp.85);
+        %tmp.87 = as %tmp.86 Text;
+        symbol [ Text %tmp.87 55 68 72 ];
+        lputv %time_view.10 %tmp.87;
+        symbol [ time_view %time_view.10 55 12 21 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 56 8 ]
+        %tmp.88 = lgetv %time_view.10;
+        symbol [ time_view %tmp.88 56 8 17 ];
+        symbol [ setText %tmp.89 56 18 25 ];
+        %tmp.89 = getv function %tmp.88 :setText;
+        %tmp.90 = lgetv %timeString.8;
+        symbol [ timeString %tmp.90 56 26 36 ];
+        invoke %tmp.88 %tmp.89(%tmp.90);
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 58 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %ampm_view.11 = local;
+        symbol [ ampm_view %ampm_view.11 58 12 21 ];
+        symbol [ View %tmp.92 58 24 28 ];
+        %tmp.92 = getv ? :View;
+        symbol [ findDrawableById %tmp.93 58 29 45 ];
+        %tmp.93 = getv function %tmp.92 :findDrawableById;
+        %tmp.94 = "AmPm";
+        %tmp.95 = invoke %tmp.92 %tmp.93(%tmp.94);
+        %tmp.96 = as %tmp.95 Text;
+        symbol [ Text %tmp.96 58 57 61 ];
+        lputv %ampm_view.11 %tmp.96;
+        symbol [ ampm_view %ampm_view.11 58 12 21 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 59 8 ]
+        %tmp.97 = lgetv %ampm_view.11;
+        symbol [ ampm_view %tmp.97 59 8 17 ];
+        symbol [ setText %tmp.98 59 18 25 ];
+        %tmp.98 = getv function %tmp.97 :setText;
+        %tmp.99 = lgetv %ampm.5;
+        symbol [ ampm %tmp.99 59 26 30 ];
+        invoke %tmp.97 %tmp.98(%tmp.99);
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 61 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %date_view.12 = local;
+        symbol [ date_view %date_view.12 61 12 21 ];
+        symbol [ View %tmp.101 61 24 28 ];
+        %tmp.101 = getv ? :View;
+        symbol [ findDrawableById %tmp.102 61 29 45 ];
+        %tmp.102 = getv function %tmp.101 :findDrawableById;
+        %tmp.103 = "Date";
+        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
+        %tmp.105 = as %tmp.104 Text;
+        symbol [ Text %tmp.105 61 57 61 ];
+        lputv %date_view.12 %tmp.105;
+        symbol [ date_view %date_view.12 61 12 21 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 62 8 ]
+        %tmp.106 = lgetv %date_view.12;
+        symbol [ date_view %tmp.106 62 8 17 ];
+        symbol [ setText %tmp.107 62 18 25 ];
+        %tmp.107 = getv function %tmp.106 :setText;
+        %tmp.108 = lgetv %formated_date.9;
+        symbol [ formated_date %tmp.108 62 26 39 ];
+        invoke %tmp.106 %tmp.107(%tmp.108);
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 64 8 ]
+        [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop" ]
+        %day_name_view.13 = local;
+        symbol [ day_name_view %day_name_view.13 64 12 25 ];
+        symbol [ View %tmp.110 64 28 32 ];
+        %tmp.110 = getv ? :View;
+        symbol [ findDrawableById %tmp.111 64 33 49 ];
+        %tmp.111 = getv function %tmp.110 :findDrawableById;
+        %tmp.112 = "DayOfTheWeek";
+        %tmp.113 = invoke %tmp.110 %tmp.111(%tmp.112);
+        %tmp.114 = as %tmp.113 Text;
+        symbol [ Text %tmp.114 64 69 73 ];
+        lputv %day_name_view.13 %tmp.114;
+        symbol [ day_name_view %day_name_view.13 64 12 25 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 65 8 ]
+        %tmp.115 = lgetv %day_name_view.13;
+        symbol [ day_name_view %tmp.115 65 8 21 ];
+        symbol [ setText %tmp.116 65 22 29 ];
+        %tmp.116 = getv function %tmp.115 :setText;
+        %tmp.117 = lgetv %dayName.7;
+        symbol [ dayName %tmp.117 65 30 37 ];
+        invoke %tmp.115 %tmp.116(%tmp.117);
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" 68 8 ]
+        symbol [ View %tmp.119 68 8 12 ];
+        %tmp.119 = getv ? :View;
+        symbol [ onUpdate %tmp.120 68 13 21 ];
+        %tmp.120 = getv function %tmp.119 :onUpdate;
+        %tmp.121 = lgetv %dc;
+        symbol [ dc %tmp.121 68 22 24 ];
+        invoke %tmp.119 %tmp.120(%tmp.121);
+_Users_kuba_projects_garmin_garmin_simple_watch_face_code_source_customfaceView_mc_26_40_69_4_stop:
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 74; @symbol_functiondef = [onHide,74,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 78; @symbol_functiondef = [onExitSleep,78,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 82; @symbol_functiondef = [onEnterSleep,82,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc"; @line = 1; ]
+<init> {
+}

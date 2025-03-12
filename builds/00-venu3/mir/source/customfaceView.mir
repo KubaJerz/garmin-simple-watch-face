@@ -1,0 +1,278 @@
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; @symbol_importdef<2> = [Gregorian,6,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 8; @symbol_classdef = [customfaceView,8,6,20]; @symbol_extends<0> = [WatchUi,8,29,36]; @symbol_extends<1> = [WatchFace,8,37,46]; ]
+class customfaceView extends WatchUi.WatchFace {
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_10_26_12_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 11 8 ]
+        symbol [ WatchFace %tmp.2 11 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 11 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_10_26_12_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 15; @symbol_functiondef = [onLayout,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Dc,15,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_15_40_17_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 16 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 16 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 16 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 16 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 16 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 16 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_15_40_17_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 22; @symbol_functiondef = [onShow,22,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 26; @symbol_functiondef = [onUpdate,26,13,21]; @symbol_param<0> = [dc,26,22,24]; @symbol_param<0>_type<0> = [Dc,26,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 28 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 28 12 21 ];
+        symbol [ System %tmp.1 28 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 28 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 28 12 21 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 31 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %now.2 = local;
+        symbol [ now %now.2 31 12 15 ];
+        symbol [ Time %tmp.4 31 18 22 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 31 23 26 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %now.2 %tmp.6;
+        symbol [ now %now.2 31 12 15 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 32 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %info.3 = local;
+        symbol [ info %info.3 32 12 16 ];
+        symbol [ Gregorian %tmp.7 32 19 28 ];
+        %tmp.7 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.8 32 29 33 ];
+        %tmp.8 = getv function %tmp.7 :info;
+        %tmp.9 = lgetv %now.2;
+        symbol [ now %tmp.9 32 34 37 ];
+        symbol [ Time %tmp.10 32 39 43 ];
+        %tmp.10 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.11 32 44 56 ];
+        %tmp.11 = getv %tmp.10 :FORMAT_SHORT;
+        %tmp.12 = invoke %tmp.7 %tmp.8(%tmp.9, %tmp.11);
+        lputv %info.3 %tmp.12;
+        symbol [ info %info.3 32 12 16 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 34 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %dayNames.4 = local;
+        symbol [ dayNames %dayNames.4 34 12 20 ];
+        %tmp.13 = newa 7;
+        %tmp.14 = "Sunday";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 0 %tmp.14;
+        %tmp.17 = "Monday";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 1 %tmp.17;
+        %tmp.20 = "Tuesday";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 2 %tmp.20;
+        %tmp.23 = "Wednesday";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 3 %tmp.23;
+        %tmp.26 = "Thursday";
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 4 %tmp.26;
+        %tmp.29 = "Friday";
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 5 %tmp.29;
+        %tmp.32 = "Saturday";
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 6 %tmp.32;
+        lputv %dayNames.4 %tmp.34;
+        symbol [ dayNames %dayNames.4 34 12 20 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 35 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %dayName.5 = local;
+        symbol [ dayName %dayName.5 35 12 19 ];
+        %tmp.35 = lgetv %dayNames.4;
+        symbol [ dayNames %tmp.35 35 22 30 ];
+        %tmp.36 = lgetv %info.3;
+        symbol [ info %tmp.36 35 31 35 ];
+        symbol [ day_of_week %tmp.37 35 36 47 ];
+        %tmp.37 = getv %tmp.36 :day_of_week;
+        %tmp.38 = 1;
+        %tmp.39 = sub %tmp.37 %tmp.38;
+        %tmp.40 = agetv %tmp.35 %tmp.39;
+        lputv %dayName.5 %tmp.40;
+        symbol [ dayName %dayName.5 35 12 19 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 38 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %timeString.6 = local;
+        symbol [ timeString %timeString.6 38 12 22 ];
+        symbol [ Lang %tmp.41 38 25 29 ];
+        %tmp.41 = getm $.Toybox.Lang;
+        symbol [ format %tmp.42 38 30 36 ];
+        %tmp.42 = getv function %tmp.41 :format;
+        %tmp.43 = "$1$:$2$";
+        %tmp.44 = newa 2;
+        %tmp.45 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.45 38 49 58 ];
+        symbol [ hour %tmp.46 38 59 63 ];
+        %tmp.46 = getv %tmp.45 :hour;
+        %tmp.47 = dup %tmp.44;
+        %tmp.48 = aputv %tmp.47 0 %tmp.46;
+        %tmp.49 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.49 38 65 74 ];
+        symbol [ min %tmp.50 38 75 78 ];
+        %tmp.50 = getv %tmp.49 :min;
+        %tmp.51 = dup %tmp.48;
+        %tmp.52 = aputv %tmp.51 1 %tmp.50;
+        %tmp.53 = invoke %tmp.41 %tmp.42(%tmp.43, %tmp.52);
+        lputv %timeString.6 %tmp.53;
+        symbol [ timeString %timeString.6 38 12 22 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 39 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %formated_date.7 = local;
+        symbol [ formated_date %formated_date.7 39 12 25 ];
+        symbol [ Lang %tmp.54 39 28 32 ];
+        %tmp.54 = getm $.Toybox.Lang;
+        symbol [ format %tmp.55 39 33 39 ];
+        %tmp.55 = getv function %tmp.54 :format;
+        %tmp.56 = "$1$/$2$";
+        %tmp.57 = newa 2;
+        %tmp.58 = lgetv %info.3;
+        symbol [ info %tmp.58 39 52 56 ];
+        symbol [ month %tmp.59 39 57 62 ];
+        %tmp.59 = getv %tmp.58 :month;
+        %tmp.60 = dup %tmp.57;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.62 = lgetv %info.3;
+        symbol [ info %tmp.62 39 64 68 ];
+        symbol [ day %tmp.63 39 69 72 ];
+        %tmp.63 = getv %tmp.62 :day;
+        %tmp.64 = dup %tmp.61;
+        %tmp.65 = aputv %tmp.64 1 %tmp.63;
+        %tmp.66 = invoke %tmp.54 %tmp.55(%tmp.56, %tmp.65);
+        lputv %formated_date.7 %tmp.66;
+        symbol [ formated_date %formated_date.7 39 12 25 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 42 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %time_view.8 = local;
+        symbol [ time_view %time_view.8 42 12 21 ];
+        symbol [ View %tmp.68 42 24 28 ];
+        %tmp.68 = getv ? :View;
+        symbol [ findDrawableById %tmp.69 42 29 45 ];
+        %tmp.69 = getv function %tmp.68 :findDrawableById;
+        %tmp.70 = "HoursAndMinutes";
+        %tmp.71 = invoke %tmp.68 %tmp.69(%tmp.70);
+        %tmp.72 = as %tmp.71 Text;
+        symbol [ Text %tmp.72 42 68 72 ];
+        lputv %time_view.8 %tmp.72;
+        symbol [ time_view %time_view.8 42 12 21 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 43 8 ]
+        %tmp.73 = lgetv %time_view.8;
+        symbol [ time_view %tmp.73 43 8 17 ];
+        symbol [ setText %tmp.74 43 18 25 ];
+        %tmp.74 = getv function %tmp.73 :setText;
+        %tmp.75 = lgetv %timeString.6;
+        symbol [ timeString %tmp.75 43 26 36 ];
+        invoke %tmp.73 %tmp.74(%tmp.75);
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 45 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %date_view.9 = local;
+        symbol [ date_view %date_view.9 45 12 21 ];
+        symbol [ View %tmp.77 45 24 28 ];
+        %tmp.77 = getv ? :View;
+        symbol [ findDrawableById %tmp.78 45 29 45 ];
+        %tmp.78 = getv function %tmp.77 :findDrawableById;
+        %tmp.79 = "Date";
+        %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+        %tmp.81 = as %tmp.80 Text;
+        symbol [ Text %tmp.81 45 57 61 ];
+        lputv %date_view.9 %tmp.81;
+        symbol [ date_view %date_view.9 45 12 21 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 46 8 ]
+        %tmp.82 = lgetv %date_view.9;
+        symbol [ date_view %tmp.82 46 8 17 ];
+        symbol [ setText %tmp.83 46 18 25 ];
+        %tmp.83 = getv function %tmp.82 :setText;
+        %tmp.84 = lgetv %formated_date.7;
+        symbol [ formated_date %tmp.84 46 26 39 ];
+        invoke %tmp.82 %tmp.83(%tmp.84);
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 48 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_start" "_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop" ]
+        %day_name_view.10 = local;
+        symbol [ day_name_view %day_name_view.10 48 12 25 ];
+        symbol [ View %tmp.86 48 28 32 ];
+        %tmp.86 = getv ? :View;
+        symbol [ findDrawableById %tmp.87 48 33 49 ];
+        %tmp.87 = getv function %tmp.86 :findDrawableById;
+        %tmp.88 = "DayOfTheWeek";
+        %tmp.89 = invoke %tmp.86 %tmp.87(%tmp.88);
+        %tmp.90 = as %tmp.89 Text;
+        symbol [ Text %tmp.90 48 69 73 ];
+        lputv %day_name_view.10 %tmp.90;
+        symbol [ day_name_view %day_name_view.10 48 12 25 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 49 8 ]
+        %tmp.91 = lgetv %day_name_view.10;
+        symbol [ day_name_view %tmp.91 49 8 21 ];
+        symbol [ setText %tmp.92 49 22 29 ];
+        %tmp.92 = getv function %tmp.91 :setText;
+        %tmp.93 = lgetv %dayName.5;
+        symbol [ dayName %tmp.93 49 30 37 ];
+        invoke %tmp.91 %tmp.92(%tmp.93);
+[ "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc" 52 8 ]
+        symbol [ View %tmp.95 52 8 12 ];
+        %tmp.95 = getv ? :View;
+        symbol [ onUpdate %tmp.96 52 13 21 ];
+        %tmp.96 = getv function %tmp.95 :onUpdate;
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 52 22 24 ];
+        invoke %tmp.95 %tmp.96(%tmp.97);
+_Users_kuba_Desktop_playground_garmin_test_customface_source_customfaceView_mc_26_40_53_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 58; @symbol_functiondef = [onHide,58,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 62; @symbol_functiondef = [onExitSleep,62,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 66; @symbol_functiondef = [onEnterSleep,66,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/customface/source/customfaceView.mc"; @line = 1; ]
+<init> {
+}
