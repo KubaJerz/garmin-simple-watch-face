@@ -33,19 +33,17 @@
         <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="52" parent="globals/customfaceView" pc="268435795" symbol="onUpdate"/>
         <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="55" parent="globals/customfaceView" pc="268435836" symbol="onUpdate"/>
         <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="56" parent="globals/customfaceView" pc="268435860" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="58" parent="globals/customfaceView" pc="268435872" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="59" parent="globals/customfaceView" pc="268435896" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="61" parent="globals/customfaceView" pc="268435908" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="62" parent="globals/customfaceView" pc="268435932" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="64" parent="globals/customfaceView" pc="268435944" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="65" parent="globals/customfaceView" pc="268435968" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="68" parent="globals/customfaceView" pc="268435980" symbol="onUpdate"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268436001" symbol="WatchFace"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268436012" symbol="WatchFace"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436090" symbol="WatchFace"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436184" symbol="WatchFace"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436262" symbol="WatchFace"/>
-        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436340" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="61" parent="globals/customfaceView" pc="268435872" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="62" parent="globals/customfaceView" pc="268435896" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="64" parent="globals/customfaceView" pc="268435908" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="65" parent="globals/customfaceView" pc="268435932" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/source/customfaceView.mc" id="15" lineNum="68" parent="globals/customfaceView" pc="268435944" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268435965" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268435976" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436054" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="18" parent="globals/Rez/Layouts" pc="268436148" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436226" symbol="WatchFace"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-simple-watch-face/code/bin/gen/006-B4260-00/source/Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436304" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -91,25 +89,24 @@
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435613" name="dc" stackId="1" startPc="268435578"/>
-        <entry arg="true" endPc="268436000" name="dc" stackId="1" startPc="268435629"/>
-        <entry endPc="268435999" name="clockTime" stackId="2" startPc="268435632"/>
-        <entry endPc="268435999" name="now" stackId="3" startPc="268435632"/>
-        <entry endPc="268435999" name="info" stackId="4" startPc="268435632"/>
-        <entry endPc="268435999" name="hour" stackId="5" startPc="268435632"/>
-        <entry endPc="268435999" name="ampm" stackId="6" startPc="268435632"/>
-        <entry endPc="268435999" name="dayNames" stackId="7" startPc="268435632"/>
-        <entry endPc="268435999" name="dayName" stackId="8" startPc="268435632"/>
-        <entry endPc="268435999" name="timeString" stackId="9" startPc="268435632"/>
-        <entry endPc="268435999" name="formated_date" stackId="10" startPc="268435632"/>
-        <entry endPc="268435999" name="time_view" stackId="11" startPc="268435632"/>
-        <entry endPc="268435999" name="ampm_view" stackId="12" startPc="268435632"/>
-        <entry endPc="268435999" name="date_view" stackId="13" startPc="268435632"/>
-        <entry endPc="268435999" name="day_name_view" stackId="14" startPc="268435632"/>
-        <entry arg="true" endPc="268436364" name="dc" stackId="1" startPc="268436001"/>
-        <entry endPc="268436364" name="rez_cmp_local_text_Date" stackId="2" startPc="268436012"/>
-        <entry endPc="268436364" name="rez_cmp_local_text_HoursAndMinutes" stackId="3" startPc="268436012"/>
-        <entry endPc="268436364" name="rez_cmp_local_text_AmPm" stackId="4" startPc="268436012"/>
-        <entry endPc="268436364" name="rez_cmp_local_text_DayOfTheWeek" stackId="5" startPc="268436012"/>
+        <entry arg="true" endPc="268435964" name="dc" stackId="1" startPc="268435629"/>
+        <entry endPc="268435963" name="clockTime" stackId="2" startPc="268435632"/>
+        <entry endPc="268435963" name="now" stackId="3" startPc="268435632"/>
+        <entry endPc="268435963" name="info" stackId="4" startPc="268435632"/>
+        <entry endPc="268435963" name="hour" stackId="5" startPc="268435632"/>
+        <entry endPc="268435963" name="ampm" stackId="6" startPc="268435632"/>
+        <entry endPc="268435963" name="dayNames" stackId="7" startPc="268435632"/>
+        <entry endPc="268435963" name="dayName" stackId="8" startPc="268435632"/>
+        <entry endPc="268435963" name="timeString" stackId="9" startPc="268435632"/>
+        <entry endPc="268435963" name="formated_date" stackId="10" startPc="268435632"/>
+        <entry endPc="268435963" name="time_view" stackId="11" startPc="268435632"/>
+        <entry endPc="268435963" name="date_view" stackId="12" startPc="268435632"/>
+        <entry endPc="268435963" name="day_name_view" stackId="13" startPc="268435632"/>
+        <entry arg="true" endPc="268436328" name="dc" stackId="1" startPc="268435965"/>
+        <entry endPc="268436328" name="rez_cmp_local_text_Date" stackId="2" startPc="268435976"/>
+        <entry endPc="268436328" name="rez_cmp_local_text_HoursAndMinutes" stackId="3" startPc="268435976"/>
+        <entry endPc="268436328" name="rez_cmp_local_text_AmPm" stackId="4" startPc="268435976"/>
+        <entry endPc="268436328" name="rez_cmp_local_text_DayOfTheWeek" stackId="5" startPc="268435976"/>
     </localVars>
     <deviceInfo deviceVersion="de121dfa604491767422db2c3063530f8fd6465b" partNumber="006-B4260-00"/>
     <annotations>
@@ -180,11 +177,11 @@
         <functionEntry accessMode="public" name="onHide" parent="customfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436000" name="onUpdate" parent="customfaceView" startPc="268435629">
+        <functionEntry accessMode="public" endPc="268435964" name="onUpdate" parent="customfaceView" startPc="268435629">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436364" name="WatchFace" parent="Layouts" startPc="268436001">
+        <functionEntry accessMode="public" endPc="268436328" name="WatchFace" parent="Layouts" startPc="268435965">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

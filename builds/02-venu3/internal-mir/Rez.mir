@@ -1,0 +1,1834 @@
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_start:
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_Date.1 = local;
+            symbol [ rez_cmp_local_text_Date %rez_cmp_local_text_Date.1 14 16 39 ];
+            symbol [ WatchUi %tmp.3 14 46 53 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 14 54 58 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 5;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 14 61 71 const ];
+            %tmp.8 = "Date";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :locX;
+            symbol [ locX %tmp.12 14 82 86 const ];
+            %tmp.13 = 454;
+            %tmp.14 = 0.5;
+            %tmp.15 = mul %tmp.13 %tmp.14;
+            %tmp.16 = dup %tmp.10;
+            %tmp.17 = aputv %tmp.16 %tmp.12 %tmp.15;
+            %tmp.19 = const :locY;
+            symbol [ locY %tmp.19 14 102 106 const ];
+            %tmp.20 = 454;
+            %tmp.21 = 15;
+            %tmp.22 = 100.0;
+            %tmp.23 = div %tmp.21 %tmp.22;
+            %tmp.24 = mul %tmp.20 %tmp.23;
+            %tmp.25 = dup %tmp.17;
+            %tmp.26 = aputv %tmp.25 %tmp.19 %tmp.24;
+            %tmp.28 = const :justification;
+            symbol [ justification %tmp.28 14 131 144 const ];
+            symbol [ Graphics %tmp.29 14 146 154 ];
+            %tmp.29 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.30 14 155 174 ];
+            %tmp.30 = getv %tmp.29 :TEXT_JUSTIFY_CENTER;
+            %tmp.31 = dup %tmp.26;
+            %tmp.32 = aputv %tmp.31 %tmp.28 %tmp.30;
+            %tmp.34 = const :font;
+            symbol [ font %tmp.34 14 177 181 const ];
+            symbol [ Graphics %tmp.35 14 183 191 ];
+            %tmp.35 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.36 14 192 203 ];
+            %tmp.36 = getv %tmp.35 :FONT_MEDIUM;
+            %tmp.37 = dup %tmp.32;
+            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
+            %tmp.1 = newc %tmp.4 (%tmp.38);
+            lputv %rez_cmp_local_text_Date.1 %tmp.1;
+            symbol [ rez_cmp_local_text_Date %rez_cmp_local_text_Date.1 14 16 39 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_HoursAndMinutes.2 = local;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %rez_cmp_local_text_HoursAndMinutes.2 16 16 50 ];
+            symbol [ WatchUi %tmp.41 16 57 64 ];
+            %tmp.41 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.42 16 65 69 ];
+            %tmp.42 = getv function ? %tmp.41 :Text;
+            %tmp.43 = newd 5;
+            %tmp.45 = const :identifier;
+            symbol [ identifier %tmp.45 16 72 82 const ];
+            %tmp.46 = "HoursAndMinutes";
+            %tmp.47 = dup %tmp.43;
+            %tmp.48 = aputv %tmp.47 %tmp.45 %tmp.46;
+            %tmp.50 = const :locX;
+            symbol [ locX %tmp.50 16 104 108 const ];
+            %tmp.51 = 454;
+            %tmp.52 = 0.5;
+            %tmp.53 = mul %tmp.51 %tmp.52;
+            %tmp.54 = dup %tmp.48;
+            %tmp.55 = aputv %tmp.54 %tmp.50 %tmp.53;
+            %tmp.57 = const :locY;
+            symbol [ locY %tmp.57 16 124 128 const ];
+            %tmp.58 = 454;
+            %tmp.59 = lgetv %dc;
+            symbol [ dc %tmp.59 16 138 140 ];
+            symbol [ getFontHeight %tmp.60 16 141 154 ];
+            %tmp.60 = getv function %tmp.59 :getFontHeight;
+            symbol [ Graphics %tmp.61 16 155 163 ];
+            %tmp.61 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.62 16 164 184 ];
+            %tmp.62 = getv %tmp.61 :FONT_NUMBER_THAI_HOT;
+            %tmp.63 = invoke %tmp.59 %tmp.60(%tmp.62);
+            %tmp.64 = sub %tmp.58 %tmp.63;
+            %tmp.65 = 0.5;
+            %tmp.66 = mul %tmp.64 %tmp.65;
+            %tmp.67 = dup %tmp.55;
+            %tmp.68 = aputv %tmp.67 %tmp.57 %tmp.66;
+            %tmp.70 = const :justification;
+            symbol [ justification %tmp.70 16 196 209 const ];
+            symbol [ Graphics %tmp.71 16 211 219 ];
+            %tmp.71 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.72 16 220 239 ];
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_CENTER;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            symbol [ font %tmp.76 16 242 246 const ];
+            symbol [ Graphics %tmp.77 16 248 256 ];
+            %tmp.77 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.78 16 257 277 ];
+            %tmp.78 = getv %tmp.77 :FONT_NUMBER_THAI_HOT;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.39 = newc %tmp.42 (%tmp.80);
+            lputv %rez_cmp_local_text_HoursAndMinutes.2 %tmp.39;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %rez_cmp_local_text_HoursAndMinutes.2 16 16 50 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_AmPm.3 = local;
+            symbol [ rez_cmp_local_text_AmPm %rez_cmp_local_text_AmPm.3 18 16 39 ];
+            symbol [ WatchUi %tmp.83 18 46 53 ];
+            %tmp.83 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.84 18 54 58 ];
+            %tmp.84 = getv function ? %tmp.83 :Text;
+            %tmp.85 = newd 5;
+            %tmp.87 = const :identifier;
+            symbol [ identifier %tmp.87 18 61 71 const ];
+            %tmp.88 = "AmPm";
+            %tmp.89 = dup %tmp.85;
+            %tmp.90 = aputv %tmp.89 %tmp.87 %tmp.88;
+            %tmp.92 = const :locX;
+            symbol [ locX %tmp.92 18 82 86 const ];
+            %tmp.93 = 454;
+            %tmp.94 = 80;
+            %tmp.95 = 100.0;
+            %tmp.96 = div %tmp.94 %tmp.95;
+            %tmp.97 = mul %tmp.93 %tmp.96;
+            %tmp.98 = dup %tmp.90;
+            %tmp.99 = aputv %tmp.98 %tmp.92 %tmp.97;
+            %tmp.101 = const :locY;
+            symbol [ locY %tmp.101 18 111 115 const ];
+            %tmp.102 = 454;
+            %tmp.103 = 52;
+            %tmp.104 = 100.0;
+            %tmp.105 = div %tmp.103 %tmp.104;
+            %tmp.106 = mul %tmp.102 %tmp.105;
+            %tmp.107 = dup %tmp.99;
+            %tmp.108 = aputv %tmp.107 %tmp.101 %tmp.106;
+            %tmp.110 = const :justification;
+            symbol [ justification %tmp.110 18 140 153 const ];
+            symbol [ Graphics %tmp.111 18 155 163 ];
+            %tmp.111 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_LEFT %tmp.112 18 164 181 ];
+            %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_LEFT;
+            %tmp.113 = dup %tmp.108;
+            %tmp.114 = aputv %tmp.113 %tmp.110 %tmp.112;
+            %tmp.116 = const :font;
+            symbol [ font %tmp.116 18 184 188 const ];
+            symbol [ Graphics %tmp.117 18 190 198 ];
+            %tmp.117 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.118 18 199 208 ];
+            %tmp.118 = getv %tmp.117 :FONT_TINY;
+            %tmp.119 = dup %tmp.114;
+            %tmp.120 = aputv %tmp.119 %tmp.116 %tmp.118;
+            %tmp.81 = newc %tmp.84 (%tmp.120);
+            lputv %rez_cmp_local_text_AmPm.3 %tmp.81;
+            symbol [ rez_cmp_local_text_AmPm %rez_cmp_local_text_AmPm.3 18 16 39 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_start" "_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_DayOfTheWeek.4 = local;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %rez_cmp_local_text_DayOfTheWeek.4 20 16 47 ];
+            symbol [ WatchUi %tmp.123 20 54 61 ];
+            %tmp.123 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.124 20 62 66 ];
+            %tmp.124 = getv function ? %tmp.123 :Text;
+            %tmp.125 = newd 5;
+            %tmp.127 = const :identifier;
+            symbol [ identifier %tmp.127 20 69 79 const ];
+            %tmp.128 = "DayOfTheWeek";
+            %tmp.129 = dup %tmp.125;
+            %tmp.130 = aputv %tmp.129 %tmp.127 %tmp.128;
+            %tmp.132 = const :locX;
+            symbol [ locX %tmp.132 20 98 102 const ];
+            %tmp.133 = 454;
+            %tmp.134 = 0.5;
+            %tmp.135 = mul %tmp.133 %tmp.134;
+            %tmp.136 = dup %tmp.130;
+            %tmp.137 = aputv %tmp.136 %tmp.132 %tmp.135;
+            %tmp.139 = const :locY;
+            symbol [ locY %tmp.139 20 118 122 const ];
+            %tmp.140 = 454;
+            %tmp.141 = 75;
+            %tmp.142 = 100.0;
+            %tmp.143 = div %tmp.141 %tmp.142;
+            %tmp.144 = mul %tmp.140 %tmp.143;
+            %tmp.145 = dup %tmp.137;
+            %tmp.146 = aputv %tmp.145 %tmp.139 %tmp.144;
+            %tmp.148 = const :justification;
+            symbol [ justification %tmp.148 20 147 160 const ];
+            symbol [ Graphics %tmp.149 20 162 170 ];
+            %tmp.149 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.150 20 171 190 ];
+            %tmp.150 = getv %tmp.149 :TEXT_JUSTIFY_CENTER;
+            %tmp.151 = dup %tmp.146;
+            %tmp.152 = aputv %tmp.151 %tmp.148 %tmp.150;
+            %tmp.154 = const :font;
+            symbol [ font %tmp.154 20 193 197 const ];
+            symbol [ Graphics %tmp.155 20 199 207 ];
+            %tmp.155 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.156 20 208 218 ];
+            %tmp.156 = getv %tmp.155 :FONT_SMALL;
+            %tmp.157 = dup %tmp.152;
+            %tmp.158 = aputv %tmp.157 %tmp.154 %tmp.156;
+            %tmp.121 = newc %tmp.124 (%tmp.158);
+            lputv %rez_cmp_local_text_DayOfTheWeek.4 %tmp.121;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %rez_cmp_local_text_DayOfTheWeek.4 20 16 47 ];
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 22 12 ]
+            %tmp.159 = newa 4 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.159 22 142 147 ];
+            symbol [ WatchUi %tmp.159 22 148 155 ];
+            symbol [ Drawable %tmp.159 22 156 164 ];
+            %tmp.160 = lgetv %rez_cmp_local_text_Date.1;
+            symbol [ rez_cmp_local_text_Date %tmp.160 22 20 43 ];
+            %tmp.161 = dup %tmp.159;
+            %tmp.162 = aputv %tmp.161 0 %tmp.160;
+            %tmp.163 = lgetv %rez_cmp_local_text_HoursAndMinutes.2;
+            symbol [ rez_cmp_local_text_HoursAndMinutes %tmp.163 22 45 79 ];
+            %tmp.164 = dup %tmp.162;
+            %tmp.165 = aputv %tmp.164 1 %tmp.163;
+            %tmp.166 = lgetv %rez_cmp_local_text_AmPm.3;
+            symbol [ rez_cmp_local_text_AmPm %tmp.166 22 81 104 ];
+            %tmp.167 = dup %tmp.165;
+            %tmp.168 = aputv %tmp.167 2 %tmp.166;
+            %tmp.169 = lgetv %rez_cmp_local_text_DayOfTheWeek.4;
+            symbol [ rez_cmp_local_text_DayOfTheWeek %tmp.169 22 106 137 ];
+            %tmp.170 = dup %tmp.168;
+            %tmp.171 = aputv %tmp.170 3 %tmp.169;
+            ret %tmp.171;
+_Users_kuba_projects_garmin_garmin_simple_watch_face_builds_02_venu3_gen_006_B4260_00_source_Rez_mcgen_13_73_23_8_stop:
+        }
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 26; @symbol_moduledef = [Strings,26,11,18]; ]
+    module Strings {
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 26; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [AppName,27,27,34]; @symbol_type<0> = [ResourceId,27,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 30; @symbol_moduledef = [Styles,30,11,17]; ]
+    module Styles {
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 31; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,31,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 31; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 32 18 ]
+                symbol [ Graphics %tmp.172 32 34 42 ];
+                %tmp.172 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.173 32 43 62 ];
+                %tmp.173 = getv %tmp.172 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.173;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 33 18 ]
+                symbol [ Graphics %tmp.174 33 25 33 ];
+                %tmp.174 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.175 33 34 44 ];
+                %tmp.175 = getv %tmp.174 :FONT_SMALL;
+                putv self :font %tmp.175;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 32; @position = 18; @symbol_constdef = [justification,32,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 33; @position = 18; @symbol_constdef = [font,33,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 36; @symbol_moduledef = [system_size__menu_header,36,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 36; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 37; @position = 18; @symbol_constdef = [width,37,18,23]; @symbol_type<0> = [Number,37,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 38; @position = 18; @symbol_constdef = [height,38,18,24]; @symbol_type<0> = [Number,38,28,34]; ]
+            const height as Number = 105;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 41; @symbol_moduledef = [system_loc__hint_button_left_bottom,41,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 41; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [exclude,42,18,25]; @symbol_type<0> = [Boolean,42,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 45; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,45,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 45; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 46 18 ]
+                symbol [ Graphics %tmp.176 46 34 42 ];
+                %tmp.176 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.177 46 43 62 ];
+                %tmp.177 = getv %tmp.176 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.178 46 63 71 ];
+                %tmp.178 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.179 46 72 92 ];
+                %tmp.179 = getv %tmp.178 :TEXT_JUSTIFY_VCENTER;
+                %tmp.180 = bitor %tmp.177 %tmp.179;
+                putv self :justification %tmp.180;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 47 18 ]
+                symbol [ Graphics %tmp.181 47 25 33 ];
+                %tmp.181 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.182 47 34 44 ];
+                %tmp.182 = getv %tmp.181 :FONT_SMALL;
+                putv self :font %tmp.182;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [justification,46,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [font,47,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 50; @symbol_moduledef = [prompt_loc__body_no_title,50,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [x,51,18,19]; @symbol_type<0> = [Number,51,23,29]; ]
+            const x as Number = 45;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [y,52,18,19]; @symbol_type<0> = [Number,52,23,29]; ]
+            const y as Number = 68;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 55; @symbol_moduledef = [system_icon_dark__about,55,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 55; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [filename,56,18,26]; @symbol_type<0> = [String,56,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__about.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [compress,57,18,26]; @symbol_type<0> = [String,57,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [dithering,58,18,27]; @symbol_type<0> = [String,58,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [automaticPalette,59,18,34]; @symbol_type<0> = [String,59,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [packingFormat,60,18,31]; @symbol_type<0> = [String,60,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 63; @symbol_moduledef = [system_icon_light__question,63,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 63; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [filename,64,18,26]; @symbol_type<0> = [String,64,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__question.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [compress,65,18,26]; @symbol_type<0> = [String,65,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [dithering,66,18,27]; @symbol_type<0> = [String,66,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [automaticPalette,67,18,34]; @symbol_type<0> = [String,67,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [packingFormat,68,18,31]; @symbol_type<0> = [String,68,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 71; @symbol_moduledef = [system_loc__hint_button_left_top,71,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 71; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [exclude,72,18,25]; @symbol_type<0> = [Boolean,72,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 75; @symbol_moduledef = [prompt_font__title,75,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 75; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 76 18 ]
+                symbol [ Graphics %tmp.183 76 34 42 ];
+                %tmp.183 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.184 76 43 62 ];
+                %tmp.184 = getv %tmp.183 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.185 76 63 71 ];
+                %tmp.185 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.186 76 72 92 ];
+                %tmp.186 = getv %tmp.185 :TEXT_JUSTIFY_VCENTER;
+                %tmp.187 = bitor %tmp.184 %tmp.186;
+                putv self :justification %tmp.187;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 77 18 ]
+                symbol [ Graphics %tmp.188 77 25 33 ];
+                %tmp.188 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.189 77 34 44 ];
+                %tmp.189 = getv %tmp.188 :FONT_XTINY;
+                putv self :font %tmp.189;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [justification,76,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [font,77,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 80; @symbol_moduledef = [system_icon_dark__discard,80,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 80; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [filename,81,18,26]; @symbol_type<0> = [String,81,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [compress,82,18,26]; @symbol_type<0> = [String,82,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [dithering,83,18,27]; @symbol_type<0> = [String,83,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [automaticPalette,84,18,34]; @symbol_type<0> = [String,84,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [packingFormat,85,18,31]; @symbol_type<0> = [String,85,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 88; @symbol_moduledef = [system_size__menu_item,88,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 88; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [width,89,18,23]; @symbol_type<0> = [Number,89,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [height,90,18,24]; @symbol_type<0> = [Number,90,28,34]; ]
+            const height as Number = 116;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 93; @symbol_moduledef = [system_color_dark__text,93,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 93; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 95 18 ]
+                symbol [ Graphics %tmp.190 95 31 39 ];
+                %tmp.190 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.191 95 40 57 ];
+                %tmp.191 = getv %tmp.190 :COLOR_TRANSPARENT;
+                putv self :background %tmp.191;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [color,94,18,23]; @symbol_type<0> = [Number,94,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [background,95,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 98; @symbol_moduledef = [system_icon_destructive__discard,98,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 98; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [filename,99,18,26]; @symbol_type<0> = [String,99,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_destructive__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [dithering,100,18,27]; @symbol_type<0> = [String,100,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [packingFormat,101,18,31]; @symbol_type<0> = [String,101,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 104; @symbol_moduledef = [system_icon_dark__hint_action_menu,104,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 104; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [filename,105,18,26]; @symbol_type<0> = [String,105,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__hint_action_menu.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [dithering,106,18,27]; @symbol_type<0> = [String,106,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [packingFormat,107,18,31]; @symbol_type<0> = [String,107,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 110; @symbol_moduledef = [prompt_size__title,110,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 110; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [width,111,18,23]; @symbol_type<0> = [Number,111,27,33]; ]
+            const width as Number = 192;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [height,112,18,24]; @symbol_type<0> = [Number,112,28,34]; ]
+            const height as Number = 81;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 115; @symbol_moduledef = [confirmation_font__body,115,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 115; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 116 18 ]
+                symbol [ Graphics %tmp.192 116 34 42 ];
+                %tmp.192 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.193 116 43 62 ];
+                %tmp.193 = getv %tmp.192 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.194 116 63 71 ];
+                %tmp.194 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.195 116 72 92 ];
+                %tmp.195 = getv %tmp.194 :TEXT_JUSTIFY_VCENTER;
+                %tmp.196 = bitor %tmp.193 %tmp.195;
+                putv self :justification %tmp.196;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 117 18 ]
+                symbol [ Graphics %tmp.197 117 25 33 ];
+                %tmp.197 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.198 117 34 43 ];
+                %tmp.198 = getv %tmp.197 :FONT_TINY;
+                putv self :font %tmp.198;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [justification,116,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [font,117,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 120; @symbol_moduledef = [system_color_dark__background,120,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 120; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [color,121,18,23]; @symbol_type<0> = [Number,121,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [background,122,18,28]; @symbol_type<0> = [Number,122,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 125; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,125,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 125; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 126; @position = 18; @symbol_constdef = [exclude,126,18,25]; @symbol_type<0> = [Boolean,126,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 129; @symbol_moduledef = [system_size__launch_icon,129,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 129; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [scaleX,130,18,24]; @symbol_type<0> = [Number,130,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [scaleY,131,18,24]; @symbol_type<0> = [Number,131,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 132; @position = 18; @symbol_constdef = [scaleRelativeTo,132,18,33]; @symbol_type<0> = [String,132,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 135; @symbol_moduledef = [confirmation_input__confirm,135,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 135; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [y1,136,18,20]; @symbol_type<0> = [Number,136,24,30]; ]
+            const y1 as Number = 345;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [x1,137,18,20]; @symbol_type<0> = [Number,137,24,30]; ]
+            const x1 as Number = 84;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [y2,138,18,20]; @symbol_type<0> = [Number,138,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [x2,139,18,20]; @symbol_type<0> = [Number,139,24,30]; ]
+            const x2 as Number = 370;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 142; @symbol_moduledef = [prompt_font__body_with_title,142,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 142; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 143 18 ]
+                symbol [ Graphics %tmp.199 143 34 42 ];
+                %tmp.199 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.200 143 43 62 ];
+                %tmp.200 = getv %tmp.199 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.200;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 144 18 ]
+                symbol [ Graphics %tmp.201 144 25 33 ];
+                %tmp.201 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.202 144 34 43 ];
+                %tmp.202 = getv %tmp.201 :FONT_TINY;
+                putv self :font %tmp.202;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [justification,143,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [font,144,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 147; @symbol_moduledef = [confirmation_loc__body,147,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [x,148,18,19]; @symbol_type<0> = [Number,148,23,29]; ]
+            const x as Number = 93;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [y,149,18,19]; @symbol_type<0> = [Number,149,23,29]; ]
+            const y as Number = 91;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 152; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,152,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [exclude,153,18,25]; @symbol_type<0> = [Boolean,153,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 156; @symbol_moduledef = [prompt_color_dark__background,156,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 156; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [color,157,18,23]; @symbol_type<0> = [Number,157,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [background,158,18,28]; @symbol_type<0> = [Number,158,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 161; @symbol_moduledef = [system_icon_destructive__hint_action_menu,161,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 161; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [filename,162,18,26]; @symbol_type<0> = [String,162,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_destructive__hint_action_menu.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [dithering,163,18,27]; @symbol_type<0> = [String,163,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [packingFormat,164,18,31]; @symbol_type<0> = [String,164,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 167; @symbol_moduledef = [system_loc__hint_action_menu,167,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [x,168,18,19]; @symbol_type<0> = [Number,168,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [horizontalJustification,169,18,41]; @symbol_type<0> = [String,169,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [y,170,18,19]; @symbol_type<0> = [Number,170,23,29]; ]
+            const y as Number = 370;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 173; @symbol_moduledef = [confirmation_icon__hint_confirm,173,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [filename,174,18,26]; @symbol_type<0> = [String,174,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [dithering,175,18,27]; @symbol_type<0> = [String,175,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [packingFormat,176,18,31]; @symbol_type<0> = [String,176,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 179; @symbol_moduledef = [system_loc__hint_button_left_middle,179,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 179; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [exclude,180,18,25]; @symbol_type<0> = [Boolean,180,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 183; @symbol_moduledef = [prompt_size__body_no_title,183,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 183; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [width,184,18,23]; @symbol_type<0> = [Number,184,27,33]; ]
+            const width as Number = 363;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [height,185,18,24]; @symbol_type<0> = [Number,185,28,34]; ]
+            const height as Number = 295;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 188; @symbol_moduledef = [system_icon_light__hint_button_left_top,188,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [exclude,189,18,25]; @symbol_type<0> = [Boolean,189,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 192; @symbol_moduledef = [prompt_color_light__background,192,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [color,193,18,23]; @symbol_type<0> = [Number,193,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [background,194,18,28]; @symbol_type<0> = [Number,194,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 197; @symbol_moduledef = [confirmation_input__delete,197,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 198 18 ]
+                symbol [ WatchUi %tmp.203 198 27 34 ];
+                %tmp.203 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.204 198 35 44 ];
+                %tmp.204 = getv %tmp.203 :KEY_ENTER;
+                putv self :button %tmp.204;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [button,198,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 201; @symbol_moduledef = [system_icon_dark__hint_button_left_top,201,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [exclude,202,18,25]; @symbol_type<0> = [Boolean,202,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 205; @symbol_moduledef = [system_input__action_menu,205,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 205; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [y1,206,18,20]; @symbol_type<0> = [Number,206,24,30]; ]
+            const y1 as Number = 370;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [x1,207,18,20]; @symbol_type<0> = [Number,207,24,30]; ]
+            const x1 as Number = 113;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [y2,208,18,20]; @symbol_type<0> = [Number,208,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [x2,209,18,20]; @symbol_type<0> = [Number,209,24,30]; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 212; @symbol_moduledef = [system_icon_light__save,212,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 212; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [filename,213,18,26]; @symbol_type<0> = [String,213,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__save.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 214; @position = 18; @symbol_constdef = [compress,214,18,26]; @symbol_type<0> = [String,214,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [dithering,215,18,27]; @symbol_type<0> = [String,215,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [automaticPalette,216,18,34]; @symbol_type<0> = [String,216,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [packingFormat,217,18,31]; @symbol_type<0> = [String,217,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 220; @symbol_moduledef = [prompt_color_light__body,220,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 220; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 222 18 ]
+                symbol [ Graphics %tmp.205 222 31 39 ];
+                %tmp.205 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.206 222 40 57 ];
+                %tmp.206 = getv %tmp.205 :COLOR_TRANSPARENT;
+                putv self :background %tmp.206;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [color,221,18,23]; @symbol_type<0> = [Number,221,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [background,222,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 225; @symbol_moduledef = [system_loc__subwindow,225,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [exclude,226,18,25]; @symbol_type<0> = [Boolean,226,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 229; @symbol_moduledef = [system_icon_light__warning,229,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 229; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [filename,230,18,26]; @symbol_type<0> = [String,230,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [compress,231,18,26]; @symbol_type<0> = [String,231,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [dithering,232,18,27]; @symbol_type<0> = [String,232,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [automaticPalette,233,18,34]; @symbol_type<0> = [String,233,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [packingFormat,234,18,31]; @symbol_type<0> = [String,234,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 237; @symbol_moduledef = [confirmation_color_light__body,237,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 237; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 239 18 ]
+                symbol [ Graphics %tmp.207 239 31 39 ];
+                %tmp.207 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.208 239 40 57 ];
+                %tmp.208 = getv %tmp.207 :COLOR_TRANSPARENT;
+                putv self :background %tmp.208;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 238; @position = 18; @symbol_constdef = [color,238,18,23]; @symbol_type<0> = [Number,238,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [background,239,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 242; @symbol_moduledef = [confirmation_icon_light__hint_keep,242,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [filename,243,18,26]; @symbol_type<0> = [String,243,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [dithering,244,18,27]; @symbol_type<0> = [String,244,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [packingFormat,245,18,31]; @symbol_type<0> = [String,245,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 248; @symbol_moduledef = [activity_color_light__background,248,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [color,249,18,23]; @symbol_type<0> = [Number,249,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [background,250,18,28]; @symbol_type<0> = [Number,250,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 253; @symbol_moduledef = [system_icon_positive__hint_button_right_top,253,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [filename,254,18,26]; @symbol_type<0> = [String,254,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [dithering,255,18,27]; @symbol_type<0> = [String,255,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 258; @symbol_moduledef = [system_size__screen,258,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [width,259,18,23]; @symbol_type<0> = [Number,259,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [height,260,18,24]; @symbol_type<0> = [Number,260,28,34]; ]
+            const height as Number = 454;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 263; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,263,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [filename,264,18,26]; @symbol_type<0> = [String,264,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [dithering,265,18,27]; @symbol_type<0> = [String,265,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 268; @symbol_moduledef = [system_color_light__background,268,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 268; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [color,269,18,23]; @symbol_type<0> = [Number,269,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [background,270,18,28]; @symbol_type<0> = [Number,270,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,273,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [filename,274,18,26]; @symbol_type<0> = [String,274,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [dithering,275,18,27]; @symbol_type<0> = [String,275,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 278; @symbol_moduledef = [confirmation_loc__hint_confirm,278,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [x,279,18,19]; @symbol_type<0> = [Number,279,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [horizontalJustification,280,18,41]; @symbol_type<0> = [String,280,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [y,281,18,19]; @symbol_type<0> = [Number,281,23,29]; ]
+            const y as Number = 345;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 284; @symbol_moduledef = [activity_color_dark__text,284,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 286 18 ]
+                symbol [ Graphics %tmp.209 286 31 39 ];
+                %tmp.209 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.210 286 40 57 ];
+                %tmp.210 = getv %tmp.209 :COLOR_TRANSPARENT;
+                putv self :background %tmp.210;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [color,285,18,23]; @symbol_type<0> = [Number,285,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [background,286,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 289; @symbol_moduledef = [confirmation_input__keep,289,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 290 18 ]
+                symbol [ WatchUi %tmp.211 290 27 34 ];
+                %tmp.211 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.212 290 35 42 ];
+                %tmp.212 = getv %tmp.211 :KEY_ESC;
+                putv self :button %tmp.212;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [button,290,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 293; @symbol_moduledef = [prompt_loc__body_with_title,293,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 293; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [x,294,18,19]; @symbol_type<0> = [Number,294,23,29]; ]
+            const x as Number = 45;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [y,295,18,19]; @symbol_type<0> = [Number,295,23,29]; ]
+            const y as Number = 114;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 298; @symbol_moduledef = [system_icon_dark__search,298,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [filename,299,18,26]; @symbol_type<0> = [String,299,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__search.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [compress,300,18,26]; @symbol_type<0> = [String,300,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [dithering,301,18,27]; @symbol_type<0> = [String,301,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [automaticPalette,302,18,34]; @symbol_type<0> = [String,302,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [packingFormat,303,18,31]; @symbol_type<0> = [String,303,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 306; @symbol_moduledef = [activity_color_light__text,306,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 308 18 ]
+                symbol [ Graphics %tmp.213 308 31 39 ];
+                %tmp.213 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.214 308 40 57 ];
+                %tmp.214 = getv %tmp.213 :COLOR_TRANSPARENT;
+                putv self :background %tmp.214;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [color,307,18,23]; @symbol_type<0> = [Number,307,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [background,308,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 311; @symbol_moduledef = [confirmation_icon__hint_keep,311,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [filename,312,18,26]; @symbol_type<0> = [String,312,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [dithering,313,18,27]; @symbol_type<0> = [String,313,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [packingFormat,314,18,31]; @symbol_type<0> = [String,314,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 317; @symbol_moduledef = [system_icon_dark__save,317,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 317; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [filename,318,18,26]; @symbol_type<0> = [String,318,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__save.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [compress,319,18,26]; @symbol_type<0> = [String,319,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [dithering,320,18,27]; @symbol_type<0> = [String,320,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [automaticPalette,321,18,34]; @symbol_type<0> = [String,321,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [packingFormat,322,18,31]; @symbol_type<0> = [String,322,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 325; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,325,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 325; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [exclude,326,18,25]; @symbol_type<0> = [Boolean,326,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 329; @symbol_moduledef = [system_icon_light__search,329,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 329; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [filename,330,18,26]; @symbol_type<0> = [String,330,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__search.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [compress,331,18,26]; @symbol_type<0> = [String,331,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [dithering,332,18,27]; @symbol_type<0> = [String,332,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [automaticPalette,333,18,34]; @symbol_type<0> = [String,333,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [packingFormat,334,18,31]; @symbol_type<0> = [String,334,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 337; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,337,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [exclude,338,18,25]; @symbol_type<0> = [Boolean,338,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 341; @symbol_moduledef = [system_icon_positive__hint_button_left_top,341,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [exclude,342,18,25]; @symbol_type<0> = [Boolean,342,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 345; @symbol_moduledef = [system_loc__hint_button_right_bottom,345,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 345; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [x,346,18,19]; @symbol_type<0> = [Number,346,23,29]; ]
+            const x as Number = 342;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [y,347,18,19]; @symbol_type<0> = [Number,347,23,29]; ]
+            const y as Number = 256;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 350; @symbol_moduledef = [confirmation_icon_dark__hint_reject,350,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 350; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [filename,351,18,26]; @symbol_type<0> = [String,351,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [dithering,352,18,27]; @symbol_type<0> = [String,352,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [packingFormat,353,18,31]; @symbol_type<0> = [String,353,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 356; @symbol_moduledef = [confirmation_color_dark__body,356,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 356; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 358 18 ]
+                symbol [ Graphics %tmp.215 358 31 39 ];
+                %tmp.215 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.216 358 40 57 ];
+                %tmp.216 = getv %tmp.215 :COLOR_TRANSPARENT;
+                putv self :background %tmp.216;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [color,357,18,23]; @symbol_type<0> = [Number,357,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [background,358,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 361; @symbol_moduledef = [confirmation_icon_light__hint_confirm,361,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [filename,362,18,26]; @symbol_type<0> = [String,362,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [dithering,363,18,27]; @symbol_type<0> = [String,363,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [packingFormat,364,18,31]; @symbol_type<0> = [String,364,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 367; @symbol_moduledef = [prompt_color_dark__title,367,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 369 18 ]
+                symbol [ Graphics %tmp.217 369 31 39 ];
+                %tmp.217 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.218 369 40 57 ];
+                %tmp.218 = getv %tmp.217 :COLOR_TRANSPARENT;
+                putv self :background %tmp.218;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [color,368,18,23]; @symbol_type<0> = [Number,368,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [background,369,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 372; @symbol_moduledef = [system_icon_destructive__cancel,372,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [filename,373,18,26]; @symbol_type<0> = [String,373,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [dithering,374,18,27]; @symbol_type<0> = [String,374,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [packingFormat,375,18,31]; @symbol_type<0> = [String,375,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 378; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,378,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [filename,379,18,26]; @symbol_type<0> = [String,379,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [dithering,380,18,27]; @symbol_type<0> = [String,380,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [prompt_loc__title,383,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [x,384,18,19]; @symbol_type<0> = [Number,384,23,29]; ]
+            const x as Number = 138;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [y,385,18,19]; @symbol_type<0> = [Number,385,23,29]; ]
+            const y as Number = 20;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 388; @symbol_moduledef = [confirmation_font_enhanced_readability__body,388,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 388; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 389 18 ]
+                symbol [ Graphics %tmp.219 389 34 42 ];
+                %tmp.219 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.220 389 43 62 ];
+                %tmp.220 = getv %tmp.219 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.221 389 63 71 ];
+                %tmp.221 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.222 389 72 92 ];
+                %tmp.222 = getv %tmp.221 :TEXT_JUSTIFY_VCENTER;
+                %tmp.223 = bitor %tmp.220 %tmp.222;
+                putv self :justification %tmp.223;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 390 18 ]
+                symbol [ Graphics %tmp.224 390 25 33 ];
+                %tmp.224 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.225 390 34 44 ];
+                %tmp.225 = getv %tmp.224 :FONT_SMALL;
+                putv self :font %tmp.225;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [justification,389,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [font,390,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 393; @symbol_moduledef = [prompt_color_light__title,393,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 393; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 395 18 ]
+                symbol [ Graphics %tmp.226 395 31 39 ];
+                %tmp.226 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.227 395 40 57 ];
+                %tmp.227 = getv %tmp.226 :COLOR_TRANSPARENT;
+                putv self :background %tmp.227;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [color,394,18,23]; @symbol_type<0> = [Number,394,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [background,395,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 398; @symbol_moduledef = [system_icon_dark__hint_button_right_top,398,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [filename,399,18,26]; @symbol_type<0> = [String,399,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [dithering,400,18,27]; @symbol_type<0> = [String,400,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 403; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,403,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 403; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [exclude,404,18,25]; @symbol_type<0> = [Boolean,404,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 407; @symbol_moduledef = [confirmation_icon_dark__hint_keep,407,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 407; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [filename,408,18,26]; @symbol_type<0> = [String,408,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [dithering,409,18,27]; @symbol_type<0> = [String,409,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [packingFormat,410,18,31]; @symbol_type<0> = [String,410,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 413; @symbol_moduledef = [system_icon_light__cancel,413,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [filename,414,18,26]; @symbol_type<0> = [String,414,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [compress,415,18,26]; @symbol_type<0> = [String,415,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [dithering,416,18,27]; @symbol_type<0> = [String,416,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [automaticPalette,417,18,34]; @symbol_type<0> = [String,417,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [packingFormat,418,18,31]; @symbol_type<0> = [String,418,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 421; @symbol_moduledef = [confirmation_icon_light__hint_reject,421,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [filename,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [packingFormat,424,18,31]; @symbol_type<0> = [String,424,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 427; @symbol_moduledef = [system_icon_light__about,427,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 427; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [filename,428,18,26]; @symbol_type<0> = [String,428,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__about.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [compress,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [dithering,430,18,27]; @symbol_type<0> = [String,430,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [automaticPalette,431,18,34]; @symbol_type<0> = [String,431,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [packingFormat,432,18,31]; @symbol_type<0> = [String,432,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 435; @symbol_moduledef = [system_size__toast_icon,435,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [scaleX,436,18,24]; @symbol_type<0> = [Number,436,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [scaleY,437,18,24]; @symbol_type<0> = [Number,437,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [scaleRelativeTo,438,18,33]; @symbol_type<0> = [String,438,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 441; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,441,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [exclude,442,18,25]; @symbol_type<0> = [Boolean,442,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 445; @symbol_moduledef = [confirmation_icon__hint_reject,445,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [dithering,447,18,27]; @symbol_type<0> = [String,447,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [packingFormat,448,18,31]; @symbol_type<0> = [String,448,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 451; @symbol_moduledef = [system_icon_light__hint_action_menu,451,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [filename,452,18,26]; @symbol_type<0> = [String,452,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__hint_action_menu.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [dithering,453,18,27]; @symbol_type<0> = [String,453,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [packingFormat,454,18,31]; @symbol_type<0> = [String,454,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 457; @symbol_moduledef = [system_icon_light__hint_button_right_middle,457,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 457; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 458; @position = 18; @symbol_constdef = [exclude,458,18,25]; @symbol_type<0> = [Boolean,458,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 461; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,461,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 461; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [exclude,462,18,25]; @symbol_type<0> = [Boolean,462,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 465; @symbol_moduledef = [confirmation_loc__hint_reject,465,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [x,466,18,19]; @symbol_type<0> = [Number,466,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [horizontalJustification,467,18,41]; @symbol_type<0> = [String,467,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [y,468,18,19]; @symbol_type<0> = [Number,468,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 471; @symbol_moduledef = [confirmation_icon_dark__hint_delete,471,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 471; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [filename,472,18,26]; @symbol_type<0> = [String,472,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [dithering,473,18,27]; @symbol_type<0> = [String,473,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [packingFormat,474,18,31]; @symbol_type<0> = [String,474,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 477; @symbol_moduledef = [activity_color_dark__background,477,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 477; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [color,478,18,23]; @symbol_type<0> = [Number,478,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [background,479,18,28]; @symbol_type<0> = [Number,479,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 482; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,482,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [exclude,483,18,25]; @symbol_type<0> = [Boolean,483,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 486; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,486,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [exclude,487,18,25]; @symbol_type<0> = [Boolean,487,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 490; @symbol_moduledef = [system_size__menu_icon,490,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 490; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [scaleX,491,18,24]; @symbol_type<0> = [Number,491,28,34]; ]
+            const scaleX as Number = 55;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [scaleY,492,18,24]; @symbol_type<0> = [Number,492,28,34]; ]
+            const scaleY as Number = 55;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [scaleRelativeTo,493,18,33]; @symbol_type<0> = [String,493,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 496; @symbol_moduledef = [system_icon_destructive__warning,496,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 496; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [filename,497,18,26]; @symbol_type<0> = [String,497,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_destructive__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [dithering,498,18,27]; @symbol_type<0> = [String,498,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [packingFormat,499,18,31]; @symbol_type<0> = [String,499,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 502; @symbol_moduledef = [system_loc__hint_button_right_middle,502,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 502; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [exclude,503,18,25]; @symbol_type<0> = [Boolean,503,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 506; @symbol_moduledef = [system_icon_dark__cancel,506,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 506; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [filename,507,18,26]; @symbol_type<0> = [String,507,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [compress,508,18,26]; @symbol_type<0> = [String,508,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [dithering,509,18,27]; @symbol_type<0> = [String,509,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [automaticPalette,510,18,34]; @symbol_type<0> = [String,510,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [packingFormat,511,18,31]; @symbol_type<0> = [String,511,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 514; @symbol_moduledef = [prompt_size__body_with_title,514,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 514; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [width,515,18,23]; @symbol_type<0> = [Number,515,27,33]; ]
+            const width as Number = 363;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [height,516,18,24]; @symbol_type<0> = [Number,516,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 519; @symbol_moduledef = [system_loc__hint_button_right_top,519,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [x,520,18,19]; @symbol_type<0> = [Number,520,23,29]; ]
+            const x as Number = 360;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [y,521,18,19]; @symbol_type<0> = [Number,521,23,29]; ]
+            const y as Number = 54;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 524; @symbol_moduledef = [system_color_light__text,524,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 524; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 526 18 ]
+                symbol [ Graphics %tmp.228 526 31 39 ];
+                %tmp.228 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.229 526 40 57 ];
+                %tmp.229 = getv %tmp.228 :COLOR_TRANSPARENT;
+                putv self :background %tmp.229;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [color,525,18,23]; @symbol_type<0> = [Number,525,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [background,526,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 529; @symbol_moduledef = [system_icon_light__check,529,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [filename,530,18,26]; @symbol_type<0> = [String,530,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [compress,531,18,26]; @symbol_type<0> = [String,531,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [dithering,532,18,27]; @symbol_type<0> = [String,532,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [automaticPalette,533,18,34]; @symbol_type<0> = [String,533,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [packingFormat,534,18,31]; @symbol_type<0> = [String,534,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 537; @symbol_moduledef = [confirmation_input__reject,537,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [y1,538,18,20]; @symbol_type<0> = [Number,538,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [x1,539,18,20]; @symbol_type<0> = [Number,539,24,30]; ]
+            const x1 as Number = 113;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [y2,540,18,20]; @symbol_type<0> = [Number,540,24,30]; ]
+            const y2 as Number = 88;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [x2,541,18,20]; @symbol_type<0> = [Number,541,24,30]; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 544; @symbol_moduledef = [system_icon_light__revert,544,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [filename,545,18,26]; @symbol_type<0> = [String,545,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__revert.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [compress,546,18,26]; @symbol_type<0> = [String,546,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [dithering,547,18,27]; @symbol_type<0> = [String,547,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [automaticPalette,548,18,34]; @symbol_type<0> = [String,548,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [packingFormat,549,18,31]; @symbol_type<0> = [String,549,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 552; @symbol_moduledef = [system_size__subwindow,552,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 552; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [exclude,553,18,25]; @symbol_type<0> = [Boolean,553,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 556; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,556,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 556; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [exclude,557,18,25]; @symbol_type<0> = [Boolean,557,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 560; @symbol_moduledef = [system_icon_dark__check,560,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 560; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [filename,561,18,26]; @symbol_type<0> = [String,561,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [compress,562,18,26]; @symbol_type<0> = [String,562,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [dithering,563,18,27]; @symbol_type<0> = [String,563,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [automaticPalette,564,18,34]; @symbol_type<0> = [String,564,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [packingFormat,565,18,31]; @symbol_type<0> = [String,565,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 568; @symbol_moduledef = [confirmation_loc__hint_keep,568,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 568; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [x,569,18,19]; @symbol_type<0> = [Number,569,23,29]; ]
+            const x as Number = 342;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [y,570,18,19]; @symbol_type<0> = [Number,570,23,29]; ]
+            const y as Number = 256;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 573; @symbol_moduledef = [confirmation_loc__hint_delete,573,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [x,574,18,19]; @symbol_type<0> = [Number,574,23,29]; ]
+            const x as Number = 358;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [y,575,18,19]; @symbol_type<0> = [Number,575,23,29]; ]
+            const y as Number = 54;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 578; @symbol_moduledef = [system_icon_positive__hint_action_menu,578,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 578; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [filename,579,18,26]; @symbol_type<0> = [String,579,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_positive__hint_action_menu.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [dithering,580,18,27]; @symbol_type<0> = [String,580,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [packingFormat,581,18,31]; @symbol_type<0> = [String,581,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 584; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,584,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 584; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [exclude,585,18,25]; @symbol_type<0> = [Boolean,585,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 588; @symbol_moduledef = [system_icon_light__hint_button_left_middle,588,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [exclude,589,18,25]; @symbol_type<0> = [Boolean,589,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 592; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,592,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [filename,593,18,26]; @symbol_type<0> = [String,593,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [dithering,594,18,27]; @symbol_type<0> = [String,594,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,597,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [dithering,599,18,27]; @symbol_type<0> = [String,599,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 602; @symbol_moduledef = [system_icon_dark__revert,602,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [filename,603,18,26]; @symbol_type<0> = [String,603,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__revert.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [compress,604,18,26]; @symbol_type<0> = [String,604,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [dithering,605,18,27]; @symbol_type<0> = [String,605,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [automaticPalette,606,18,34]; @symbol_type<0> = [String,606,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [packingFormat,607,18,31]; @symbol_type<0> = [String,607,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 610; @symbol_moduledef = [confirmation_icon_light__hint_delete,610,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [filename,611,18,26]; @symbol_type<0> = [String,611,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [dithering,612,18,27]; @symbol_type<0> = [String,612,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [packingFormat,613,18,31]; @symbol_type<0> = [String,613,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 616; @symbol_moduledef = [system_icon_dark__question,616,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [filename,617,18,26]; @symbol_type<0> = [String,617,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__question.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [compress,618,18,26]; @symbol_type<0> = [String,618,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [dithering,619,18,27]; @symbol_type<0> = [String,619,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [automaticPalette,620,18,34]; @symbol_type<0> = [String,620,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [packingFormat,621,18,31]; @symbol_type<0> = [String,621,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 624; @symbol_moduledef = [system_icon_light__discard,624,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 624; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [filename,625,18,26]; @symbol_type<0> = [String,625,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [compress,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [dithering,627,18,27]; @symbol_type<0> = [String,627,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [automaticPalette,628,18,34]; @symbol_type<0> = [String,628,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [packingFormat,629,18,31]; @symbol_type<0> = [String,629,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 632; @symbol_moduledef = [device_info,632,15,26]; ]
+        module device_info {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 632; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 634 18 ]
+                symbol [ Toybox %tmp.231 634 32 38 ];
+                %tmp.231 = getv ? :Toybox;
+                symbol [ System %tmp.232 634 39 45 ];
+                %tmp.232 = getv %tmp.231 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.233 634 46 64 ];
+                %tmp.233 = getv %tmp.232 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.233;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [screenWidth,633,18,29]; @symbol_type<0> = [Number,633,33,39]; ]
+            const screenWidth as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [screenShape,634,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [hasNightMode,635,18,30]; @symbol_type<0> = [Boolean,635,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [hasGpu,636,18,24]; @symbol_type<0> = [Boolean,636,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [screenHeight,637,18,30]; @symbol_type<0> = [Number,637,34,40]; ]
+            const screenHeight as Number = 454;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [hasTouchScreen,638,18,32]; @symbol_type<0> = [Boolean,638,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,639,18,44]; @symbol_type<0> = [Boolean,639,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 642; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,642,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 642; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [filename,643,18,26]; @symbol_type<0> = [String,643,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [dithering,644,18,27]; @symbol_type<0> = [String,644,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [packingFormat,645,18,31]; @symbol_type<0> = [String,645,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 648; @symbol_moduledef = [prompt_font__body_no_title,648,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 648; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 649 18 ]
+                symbol [ Graphics %tmp.234 649 34 42 ];
+                %tmp.234 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.235 649 43 62 ];
+                %tmp.235 = getv %tmp.234 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.236 649 63 71 ];
+                %tmp.236 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.237 649 72 92 ];
+                %tmp.237 = getv %tmp.236 :TEXT_JUSTIFY_VCENTER;
+                %tmp.238 = bitor %tmp.235 %tmp.237;
+                putv self :justification %tmp.238;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 650 18 ]
+                symbol [ Graphics %tmp.239 650 25 33 ];
+                %tmp.239 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.240 650 34 43 ];
+                %tmp.240 = getv %tmp.239 :FONT_TINY;
+                putv self :font %tmp.240;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [justification,649,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [font,650,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 653; @symbol_moduledef = [prompt_size__title_icon,653,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 653; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [scaleX,654,18,24]; @symbol_type<0> = [Float,654,28,33]; ]
+            const scaleX as Float = 0.14;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 655; @position = 18; @symbol_constdef = [scaleRelativeTo,655,18,33]; @symbol_type<0> = [String,655,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 658; @symbol_moduledef = [system_icon_dark__warning,658,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 658; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [filename,659,18,26]; @symbol_type<0> = [String,659,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_dark__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [compress,660,18,26]; @symbol_type<0> = [String,660,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [dithering,661,18,27]; @symbol_type<0> = [String,661,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [automaticPalette,662,18,34]; @symbol_type<0> = [String,662,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [packingFormat,663,18,31]; @symbol_type<0> = [String,663,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 666; @symbol_moduledef = [prompt_loc__title_icon,666,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 666; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [x,667,18,19]; @symbol_type<0> = [Number,667,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [y,668,18,19]; @symbol_type<0> = [Number,668,23,29]; ]
+            const y as Number = 45;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [horizontalJustification,669,18,41]; @symbol_type<0> = [String,669,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [verticalJustification,670,18,39]; @symbol_type<0> = [String,670,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 673; @symbol_moduledef = [prompt_font_enhanced_readability__title,673,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 673; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 674 18 ]
+                symbol [ Graphics %tmp.241 674 34 42 ];
+                %tmp.241 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.242 674 43 62 ];
+                %tmp.242 = getv %tmp.241 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.243 674 63 71 ];
+                %tmp.243 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.244 674 72 92 ];
+                %tmp.244 = getv %tmp.243 :TEXT_JUSTIFY_VCENTER;
+                %tmp.245 = bitor %tmp.242 %tmp.244;
+                putv self :justification %tmp.245;
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 675 18 ]
+                symbol [ Graphics %tmp.246 675 25 33 ];
+                %tmp.246 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.247 675 34 44 ];
+                %tmp.247 = getv %tmp.246 :FONT_XTINY;
+                putv self :font %tmp.247;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [justification,674,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [font,675,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 678; @symbol_moduledef = [prompt_color_dark__body,678,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 678; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen" 680 18 ]
+                symbol [ Graphics %tmp.248 680 31 39 ];
+                %tmp.248 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.249 680 40 57 ];
+                %tmp.249 = getv %tmp.248 :COLOR_TRANSPARENT;
+                putv self :background %tmp.249;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [color,679,18,23]; @symbol_type<0> = [Number,679,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 680; @position = 18; @symbol_constdef = [background,680,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 683; @symbol_moduledef = [confirmation_icon__hint_delete,683,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 683; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [filename,684,18,26]; @symbol_type<0> = [String,684,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 685; @position = 18; @symbol_constdef = [dithering,685,18,27]; @symbol_type<0> = [String,685,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 686; @position = 18; @symbol_constdef = [packingFormat,686,18,31]; @symbol_type<0> = [String,686,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 689; @symbol_moduledef = [system_icon_light__hint_button_right_top,689,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 689; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [filename,690,18,26]; @symbol_type<0> = [String,690,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [dithering,691,18,27]; @symbol_type<0> = [String,691,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 694; @symbol_moduledef = [confirmation_size__body,694,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 694; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [width,695,18,23]; @symbol_type<0> = [Number,695,27,33]; ]
+            const width as Number = 269;
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 696; @position = 18; @symbol_constdef = [height,696,18,24]; @symbol_type<0> = [Number,696,28,34]; ]
+            const height as Number = 272;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 699; @symbol_moduledef = [system_icon_positive__check,699,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 699; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 700; @position = 18; @symbol_constdef = [filename,700,18,26]; @symbol_type<0> = [String,700,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/venu3/system_icon_positive__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 701; @position = 18; @symbol_constdef = [dithering,701,18,27]; @symbol_type<0> = [String,701,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 702; @position = 18; @symbol_constdef = [packingFormat,702,18,31]; @symbol_type<0> = [String,702,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "/Users/kuba/projects/garmin/garmin-simple-watch-face/builds/02-venu3/gen/006-B4260-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

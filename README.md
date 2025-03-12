@@ -21,3 +21,5 @@ ___
 ![The display](ss.png)
 
 The screenshot shows the appearance of the v01 build of the watch face.
+
+Build02 does not have AM/PM

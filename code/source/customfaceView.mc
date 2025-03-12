@@ -55,8 +55,8 @@ class customfaceView extends WatchUi.WatchFace {
         var time_view = View.findDrawableById("HoursAndMinutes") as Text;
         time_view.setText(timeString);
 
-        var ampm_view = View.findDrawableById("AmPm") as Text;
-        ampm_view.setText(ampm);
+        // var ampm_view = View.findDrawableById("AmPm") as Text;
+        // ampm_view.setText(ampm);
 
         var date_view = View.findDrawableById("Date") as Text;
         date_view.setText(formated_date);
